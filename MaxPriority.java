@@ -1,0 +1,8 @@
+//定义类MaxPriority实现Runnable接口
+class MaxPriority implements Runnable{
+	public void run(){
+		for(int i=0;i<10;i++){
+			System.out.println(Thread.currentThread().getName()+"正在输出:"+i);
+		}
+	}
+}
