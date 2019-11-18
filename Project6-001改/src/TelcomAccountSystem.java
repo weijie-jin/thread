@@ -1,6 +1,4 @@
-import telcom.*;
 import user.*;
-import telcomfactory.*;
 
 public class TelcomAccountSystem {
 

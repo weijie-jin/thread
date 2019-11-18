@@ -1,7 +1,6 @@
 package utility;
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
-import org.xml.sax.SAXException;
 import java.io.*;
 public class Utility {
 	public static Object getBean() {
@@ -14,7 +13,7 @@ public class Utility {
 			Node classNode = nl.item(0).getFirstChild();
 			String cName = classNode.getNodeValue();
 			
-			Class c = Class.forName(cName);
+			Class<?> c = Class.forName(cName);
 			Object obj = c.newInstance();
 			return obj;
 		}catch(Exception e) {
